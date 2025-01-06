@@ -242,8 +242,8 @@ class Statistics {
    * printHeaders: print column titles for the statistics summaries.
    */
   private static void printHeaders() {
-    System.out.println(" Current Total NoQueue Car->Car Averaae Number Average Pump     Total Lost ");
-    System.out.println(" Time   Cars  Fraction   Time   Litres   Balked  Wait Usage    Profit Profit ");
+    System.out.println(" Current   Total NoQueue  Car->Car Averaae Number Average  Pump  Total  Lost ");
+    System.out.println(" Time      Cars  Fraction  Time    Litres  Balked  Wait  Usage Profit Profit ");
     for (int i = 0; i < 79; i++)
       System.out.print("-");
     System.out.println("");
