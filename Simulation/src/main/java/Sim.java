@@ -503,7 +503,7 @@ class PumpStand {
   private int topPump;
 
   /**
-   * Constructor: build a PumpStand of nwnPumps pumps, and make all of them
+   * Constructor: build a PumpStand of numPumps pumps, and make all of them
    * available.
    * 
    * @param numPumps int
@@ -784,7 +784,7 @@ class Departure extends Event {
    * makeitHappen: departure event routine
    */
   public void makeItHappen() {
-    // precondition: pump I= null && pump.getCarinService 1= null
+    // precondition: pump != null && pump.getCarinService 1= null
     // Identify the departing car and collect statistics.
     Car departingCar = pump.getCarinService();
     Sim.stats.accumSale(departingCar.getLitresNeeded());
