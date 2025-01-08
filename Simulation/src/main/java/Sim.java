@@ -682,7 +682,7 @@ class EventList {
    * @return aim.Event
    */
   public Event takeNextEvent() {
-    // precondition1 firstEvent I= null
+    // precondition firstEvent != null
     if (firstEvent == null) {
       System.out.println("Error! ran out of events ");
       return null;

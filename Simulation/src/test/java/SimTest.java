@@ -66,7 +66,7 @@ public class SimTest {
     Sim.eventList.insert(Arr);
     Sim.eventList.insert(Dep);
     Sim.eventList.takeNextEvent();
-    assertEquals(15, Sim.eventList.takeNextEvent().getTime(), 0.0001);
+    assertEquals(Arr, Sim.eventList.takeNextEvent());
   }
 
   @Test
